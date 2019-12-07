@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import ExampleComponent from '@/components/ExampleComponent.vue'
+import CommitDisplayPageComponent from '@/components/CommitDisplayPageComponent.vue'
 
 const routes = [
-  {path: '*', component: ExampleComponent},
+  {path: '*', component: CommitDisplayPageComponent },
 ]
 
 Vue.use(VueRouter)
