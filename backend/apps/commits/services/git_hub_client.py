@@ -11,6 +11,6 @@ def map_github_commit_to_internal(item, repository_id):
 
 def get_commits(repository):
     with requests.Session() as s:
-        response = s.get(f"https://api.github.com/repos/{repository.organization}/{repository.project_slug}/commits?per_page=5")
+        response = s.get(f"https://api.github.com/repos/{repository.organization}/{repository.project_slug}/commits?per_page=10")
         response.raise_for_status()
         return map(lambda item: map_github_commit_to_internal(item, repository.pk), response.json())
