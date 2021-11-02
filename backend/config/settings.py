@@ -27,10 +27,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    
     'rest_framework',
-    
-    'django_extensions',
 ]
 
 LOCAL_APPS = [
@@ -48,7 +45,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    
+
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -198,7 +195,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # AUTHENTICATION CONFIGURATION
 # ------------------------------------------------------------------------------
 AUTHENTICATION_BACKENDS = [
-    
+
     'django.contrib.auth.backends.ModelBackend',
 ]
 
@@ -224,7 +221,3 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.FileUploadParser'
     ]
 }
-
-
-
-
