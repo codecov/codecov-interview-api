@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.repositories {
+  display: flex;
+  justify-content: center;
+}

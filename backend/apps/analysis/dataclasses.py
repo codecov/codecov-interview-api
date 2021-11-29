@@ -3,6 +3,7 @@ from datetime import datetime
 
 @dataclass
 class CommitAnalysisData:
+    repository: str
     hash: str
     date: datetime
     message: str

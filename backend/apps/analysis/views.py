@@ -10,8 +10,6 @@ from apps.analysis.helpers import get_dict_info_bitbucket_repo, get_dict_info_gi
 class AnalysisViewSet(viewsets.ViewSet):
     def list(self, request):
         is_synced = CommitData.objects.exists()
-        if is_synced:
-            pass
         print("REQUESTSSS", request.data, request.query_params, request)
         github_commits = get_dict_info_github_repo()
         bitbucket_commits = get_dict_info_bitbucket_repo()
