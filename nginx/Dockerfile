@@ -8,7 +8,7 @@ RUN npm install
 
 COPY frontend /app/
 COPY .env /app/.env
-RUN npm run build
+RUN yarn build
 
 # Stage 2 - nginx & frontend dist
 FROM nginx:alpine
