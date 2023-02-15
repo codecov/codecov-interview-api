@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.8'
 
 volumes:
     postgres_data: {}
@@ -17,8 +17,8 @@ services:
     env_file: .env
 
   frontend:
-    image: node:10-alpine
-    command: npm run serve
+    image: node:19-alpine
+    command: npm run dev
     volumes:
       - ./.env:/app/.env:ro
       - ./frontend:/app
@@ -26,12 +26,10 @@ services:
     restart: on-failure
 
   postgres:
-    image: postgres:10-alpine
+    image: postgres:14-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data
     env_file: .env
-
-
 
   nginx:
     image: nginx:alpine
