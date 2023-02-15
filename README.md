@@ -1,8 +1,6 @@
-codecovify
+# codecovify
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fcodecov-interview.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fcodecov-interview?ref=badge_shield)
-
-==========
 
 This is a template app that contains the following:
 
