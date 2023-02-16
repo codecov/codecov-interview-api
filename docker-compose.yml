@@ -18,7 +18,7 @@ services:
 
   frontend:
     image: node:19-alpine
-    command: npm run dev
+    command: npm run docker-dev
     volumes:
       - ./.env:/app/.env:ro
       - ./frontend:/app
