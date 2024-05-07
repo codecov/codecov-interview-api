@@ -40,7 +40,7 @@ traitlets==4.3.2
 typed-ast==1.1.0
 urllib3==1.26.18
 wcwidth==0.1.7
-Werkzeug==3.0.1
+Werkzeug==3.0.3
 
 
 djangorestframework==3.11.2
