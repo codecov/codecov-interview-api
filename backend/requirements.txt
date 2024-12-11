@@ -4,7 +4,7 @@ backcall==0.1.0
 certifi==2024.7.4
 chardet==3.0.4
 decorator==4.3.0
-Django==4.2.16
+Django==4.2.17
 django-environ==0.4.5
 django-extensions==2.2.3
 django-redis==4.9.0
